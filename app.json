@@ -1,0 +1,14 @@
+{
+  "name": "introsde-assignment-2",
+  "description": "RESTful WEB-Services",
+  "repository": "https://github.com/EnVoY123/introsde-2015-assignment-2.git",
+  "logo": "https://avatars0.githubusercontent.com/u/14345151?v=3&u=44e85c56ea6657217f85745ccc297ddfbbb6c50e&s=140",
+  "image": "heroku/java",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/IntroSDE/heroku-buildpack-ant.git",
+    "HEROKU_URL": {
+      "description": "Heroku URL",
+      "value": "https://immense-caverns-1125.herokuapp.com/sdelab"
+    }
+  } 
+}

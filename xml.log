@@ -1,0 +1,300 @@
+Requesting from server running in: https://immense-caverns-1125.herokuapp.com/sdelab
+
+Request #1: GET /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<people>
+  <person>
+    <idPerson>1</idPerson>
+    <firstname>Goodlucky</firstname>
+    <lastname>Luke</lastname>
+    <birthdate>1965-02-12</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>2</mid>
+        <created>2014-05-10</created>
+        <measure>weight</measure>
+        <value>86.0</value>
+      </measureType>
+      <measureType>
+        <mid>3</mid>
+        <created>2012-08-13</created>
+        <measure>height</measure>
+        <value>180.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>2</idPerson>
+    <firstname>Charlie</firstname>
+    <lastname>Brown</lastname>
+    <birthdate>1945-01-10</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>4</mid>
+        <created>2013-12-29</created>
+        <measure>weight</measure>
+        <value>90.0</value>
+      </measureType>
+      <measureType>
+        <mid>15</mid>
+        <created>2015-11-22</created>
+        <measure>height</measure>
+        <value>180.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>3</idPerson>
+    <firstname>Jack</firstname>
+    <lastname>Black</lastname>
+    <birthdate>1960-10-10</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>7</mid>
+        <created>2014-10-18</created>
+        <measure>weight</measure>
+        <value>72.0</value>
+      </measureType>
+      <measureType>
+        <mid>8</mid>
+        <created>2015-09-09</created>
+        <measure>height</measure>
+        <value>180.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>4</idPerson>
+    <firstname>Paul</firstname>
+    <lastname>Martin</lastname>
+    <birthdate>1980-12-11</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>9</mid>
+        <created>2015-11-19</created>
+        <measure>weight</measure>
+        <value>76.0</value>
+      </measureType>
+      <measureType>
+        <mid>16</mid>
+        <created>2015-11-22</created>
+        <measure>height</measure>
+        <value>199.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>5</idPerson>
+    <firstname>Patrick</firstname>
+    <lastname>Brown</lastname>
+    <birthdate>1985-01-25</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>11</mid>
+        <created>2015-07-11</created>
+        <measure>weight</measure>
+        <value>65.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>6</idPerson>
+    <firstname>Max</firstname>
+    <lastname>Stepan</lastname>
+    <birthdate>1992-02-20</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>12</mid>
+        <created>2015-09-10</created>
+        <measure>height</measure>
+        <value>190.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>7</idPerson>
+    <firstname>Jack</firstname>
+    <lastname>Bauer</lastname>
+    <birthdate>1978-09-02</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>13</mid>
+        <created>2015-03-26</created>
+        <measure>height</measure>
+        <value>202.0</value>
+      </measureType>
+      <measureType>
+        <mid>14</mid>
+        <created>2014-12-12</created>
+        <measure>weight</measure>
+        <value>110.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>8</idPerson>
+    <firstname>qwerty</firstname>
+    <lastname>zxcvb</lastname>
+    <birthdate>1905-02-12</birthdate>
+  </person>
+</people>
+
+
+Request #2: GET /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>1</idPerson>
+  <firstname>Goodlucky</firstname>
+  <lastname>Luke</lastname>
+  <birthdate>1965-02-12</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>2</mid>
+      <created>2014-05-10</created>
+      <measure>weight</measure>
+      <value>86.0</value>
+    </measureType>
+    <measureType>
+      <mid>3</mid>
+      <created>2012-08-13</created>
+      <measure>height</measure>
+      <value>180.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #3: PUT /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>1</idPerson>
+  <firstname>Sterlitamak</firstname>
+  <lastname>Luke</lastname>
+  <birthdate>1965-02-12</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>2</mid>
+      <created>2014-05-10</created>
+      <measure>weight</measure>
+      <value>86.0</value>
+    </measureType>
+    <measureType>
+      <mid>3</mid>
+      <created>2012-08-13</created>
+      <measure>height</measure>
+      <value>180.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>25</idPerson>
+  <firstname>John</firstname>
+  <lastname>Doe</lastname>
+  <birthdate>2000-01-01</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>99</mid>
+      <created>2015-11-23</created>
+      <measure>weight</measure>
+      <value>55.9</value>
+    </measureType>
+    <measureType>
+      <mid>100</mid>
+      <created>2015-11-23</created>
+      <measure>height</measure>
+      <value>112.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #5: DELETE /person/25 Accept: APPLICATION/XML Content-type: NULL
+=> Result: OK
+=> HTTP Status: 204
+Request: GET /person/25: 
+=> HTTP Status: 404
+
+Request #9: GET /measureTypes Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<measureTypes>
+  <measureType>
+    <measureName>weight</measureName>
+  </measureType>
+  <measureType>
+    <measureName>height</measureName>
+  </measureType>
+  <measureType>
+    <measureName>steps</measureName>
+  </measureType>
+</measureTypes>
+
+
+Request #6: GET /person/1/weight;/person/1/height;/person/1/steps;/person/8/weight;/person/8/height;/person/8/steps; Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<measures>
+  <Measure>
+    <mid>1</mid>
+    <created>2010-02-15</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>2</mid>
+    <created>2014-05-10</created>
+    <measure>weight</measure>
+    <value>86.0</value>
+  </Measure>
+  <Measure>
+    <mid>97</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>72.0</value>
+  </Measure>
+  <Measure>
+    <mid>98</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>72.0</value>
+  </Measure>
+</measures>
+<measures>
+  <Measure>
+    <mid>3</mid>
+    <created>2012-08-13</created>
+    <measure>height</measure>
+    <value>180.0</value>
+  </Measure>
+</measures>
+
+
+Request #7: GET /person/1/weight/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<Measure>
+  <mid>1</mid>
+  <created>2010-02-15</created>
+  <measure>weight</measure>
+  <value>90.0</value>
+</Measure>
+
+
+Request #8: POST /person/1/weight Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<Measure>
+  <mid>103</mid>
+  <created>2001-12-09</created>
+  <measure>weight</measure>
+  <value>99.0</value>
+</Measure>
+
