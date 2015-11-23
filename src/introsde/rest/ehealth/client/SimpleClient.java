@@ -700,3 +700,4 @@ public class SimpleClient {
         return UriBuilder.fromUri(
                 "https://immense-caverns-1125.herokuapp.com/sdelab").build();
     }
+}
